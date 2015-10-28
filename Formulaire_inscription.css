@@ -1,0 +1,29 @@
+.sex p
+{
+	display: center;	
+
+}
+p
+{
+	text-align: center;
+}
+.Formulaire
+{
+    position: relative;
+}
+
+fieldset
+{
+	width: 35%;
+}
+
+.topPos
+{
+	vertical-align: top;	
+}
+
+.Legend
+{
+	text-align: center;
+	color: blue;
+}

@@ -4,13 +4,6 @@ img.logo
 { 
 	display: block; 
 	margin: 0 auto; 
-	/* height: px; 
-	width: px; */
-}
-
-ul ul
-{
-	display: none;
 }
 
 ul li:hover ul.niveau2 
@@ -20,12 +13,36 @@ ul li:hover ul.niveau2
 
 .box {
 	display: inline-block;
-	color: black;
-	width: 44%;
+	color: white;
+	width: 40%;
 	height: 14%;
-	margin: 20px;
-	padding: 20px;
-	box-shadow:0 0 100px;
+	padding: 3%;
+	box-shadow:0 0 100px grey;
+}
+
+.buy {
+	display: block;
+	color: white;
+	width: 40%;
+	height: 14%;
+	padding: 6%;
+	box-shadow:0 0 100px red;
+}
+section article span {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.capi {
+	text-align: center;
+}
+.boxali {
+	text-align: center;
+}
+
+.buyI {
+	text-align: center;
+	background-color: green;
 }
 
 .Tops {
@@ -36,14 +53,28 @@ ul li:hover ul.niveau2
 	padding-bottom: 1%;
 	margin: 1%;
 	text-align: center;
-	background: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.domestic {
+	display: inline-block;
+	color: white;
+	width: 30%;
+	float: left;
+	padding-bottom: 1%;
+	padding-left: 12%;
+	margin: 1%;
+	text-align: center;
+}
+
+.imgsrc {
+  max-width: 50%;
+  position: relative;
 }
 
 .img {
-	  display: table;
-  width: 100%;
-  max-height: 75.5%;
-  position: relative;
+	width: 100%;
+	position: relative;
 }
 
 .footer {
@@ -63,36 +94,6 @@ a {
 	text-decoration: none;
 	color: white;
 }
-li:hover {
-	color: #9D9AB7;
-}
-
-#nav
-{
-	width: 550px;
-	height: auto;
-	font-size: 16px;
-	font-family: Arial;
-	font-weight: bold;
-	text-align: center;
-	text-shadow: 3px 2px 3px black;
-	background-color: rgba(0, 0, 0, 1);
-}
-
-#nav ul {
-	height: auto;
-	padding: 8px 0px;
-	margin: 5px;
-	border-top: 2px solid black;
-}
-
-#nav li {
-	padding: 50px;
-}
-#nav a:hover {
-	color: red;
-	background-color: blue;
-}
 
 article h1 span {
 	padding: 1%;
@@ -104,116 +105,78 @@ div.nav ul li
 	display: inline;
 }
 
+h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
 h1
 {
 	text-align: center;
 	font-size: 50px;
 }
-nav {
-  background-color: #fff;
-  border: 1px solid #dedede;
-  border-radius: 4px;
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-  color: #888;
-  display: block;
-  margin: 8px 22px 8px 22px;
-  overflow: hidden;
-  width: 90%; 
+#menu, #menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }
 
-  nav ul {
-    margin: 0;
-    padding: 0;
-  }
+#menu li {
+  display: inline-block;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+}
 
-    nav ul li {
-      display: inline-block;
-      list-style-type: none;
-      
-      -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        -ms-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s; 
-    }
-      
-      nav > ul > li > a > .caret {
-        border-top: 4px solid #aaa;
-        border-right: 4px solid transparent;
-        border-left: 4px solid transparent;
-        content: "";
-        display: inline-block;
-        height: 0;
-        width: 0;
-        vertical-align: middle;
-  
-        -webkit-transition: color 0.1s linear;
-     	  -moz-transition: color 0.1s linear;
-       	-o-transition: color 0.1s linear;
-          transition: color 0.1s linear; 
-      }
+#menu ul li {
+  display: inherit;
+border-radius: 0;
+}
+#menu ul li:hover {
+  border-radius: 0;
+}
+#menu ul li:last-child {
+  border-radius: 0 0 8px 8px;
+}
+#menu ul {
+  position: absolute;
+  z-index: 1000;
+  max-height: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  -moz-transition: .8s all .2s;
+-webkit-transition: .8s all .2s;
+transition: .8s all .2s;
+}
+#menu li:hover ul {
+  max-height: 15em;
+}
+#menu li{
+background:#2A2333;
+}
 
-      nav > ul > li > a {
-        color: #aaa;
-        display: block;
-        line-height: 56px;
-        padding: 0 24px;
-        text-decoration: none;
-      }
+#menu li:hover, #menu li:first-child li:hover{
+background:#65537A;
+}
 
-        nav > ul > li:hover {
-          background-color: rgb( 40, 44, 47 );
-        }
-
-        nav > ul > li:hover > a {
-          color: rgb( 255, 255, 255 );
-        }
-
-        nav > ul > li:hover > a > .caret {
-          border-top-color: rgb( 255, 255, 255 );
-        }
-      
-      nav > ul > li > div {
-        background-color: rgb( 40, 44, 47 );
-        border-top: 0;
-        border-radius: 0 0 4px 4px;
-        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-        display: none;
-        margin: 0;
-        opacity: 0;
-        position: absolute;
-        width: 165px;
-	visibility: hidden;
-	z-index: 100;
-  
-        -webkit-transiton: opacity 0.2s;
-        -moz-transition: opacity 0.2s;
-        -ms-transition: opacity 0.2s;
-        -o-transition: opacity 0.2s;
-        -transition: opacity 0.2s;
-      }
-
-        nav > ul > li:hover > div {
-          display: block;
-          opacity: 1;
-          visibility: visible;
-        }
-
-          nav > ul > li > div ul > li {
-            display: block;
-          }
-
-            nav > ul > li > div ul > li > a {
-              color: #fff;
-              display: block;
-              padding: 12px 24px;
-              text-decoration: none;
-            }
-
-              nav > ul > li > div ul > li:hover > a {
-                background-color: rgba( 255, 255, 255, 0.1);
-              }
-  
+#menu a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:Arial;
+}
+#menu ul a{
+padding:8px 0;
+}
+#menu li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu li:hover a, #menu li li:hover a{
+color:#000;
+}
 
 body {
 	background-color: rgba(0, 0, 0, 0.8);

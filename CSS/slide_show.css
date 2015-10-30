@@ -1,0 +1,43 @@
+div ul li
+{
+
+     width:175px;
+     overflow:hidden;
+     transition: width 1s ease 0.01s;
+     display: inline-block;
+     padding: 0px auto;
+}
+.dernierrecours{
+
+     overflow:hidden;
+  padding: 0px auto;
+   transition: width 1s ease 0.03s;
+}
+.buy2 {
+	display: block;
+	color: white;
+	width: 75%;
+	height: 14%;
+	padding: 6%;
+	box-shadow:0 0 100px red;
+}
+
+ul .diffmenu:hover
+{
+     width:60%;    
+}
+
+.toto
+{
+    display: inline-block;
+}
+#chiant {
+	height: 628px;
+}
+.chiant
+{
+    max-width: 75%;
+} 
+ul .dernierrecours:hover {
+	width: 100%;
+}

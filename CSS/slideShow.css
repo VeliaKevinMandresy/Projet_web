@@ -1,0 +1,15 @@
+#Slides{
+	position:relative;
+	/*height:100px;
+	width:300px;*/
+}
+#Slides  img{
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index:-2;
+}
+
+#Slides  img.top{
+	z-index:-1;
+}

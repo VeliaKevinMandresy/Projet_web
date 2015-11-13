@@ -8,10 +8,9 @@ div ul li
      padding: 0px auto;
 }
 .dernierrecours{
-
-     overflow:hidden;
-  padding: 0px auto;
-   transition: width 1s ease 0.03s;
+    overflow:hidden;
+    padding: 0px auto;
+    transition: width 1s ease 0.03s;
 }
 .buy2 {
 	display: block;
